@@ -1,8 +1,16 @@
 #BlueJ class context
-comment0.params=args
-comment0.target=void\ main(String[])
-comment0.text=\nle\ point\ d'entr\u00E9e\ de\ cette\ application,\ dont\ le\ commentaire\ est\ \u00E0\ncompl\u00E9ter\n\n@param\ args\n...\n\n
-comment1.params=f
-comment1.target=float\ fahrenheitEnCelsius(int)
-comment1.text=\nla\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\n\n@param\ f\nla\ valeur\ en\ degr\u00E9\ Fahrenheit\n@return\ la\ conversion\ en\ degr\u00E9\ Celsius\n\n
-numComments=2
+comment0.target=FahrenheitCelsius
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ FahrenheitCelsius\ ici.\r\n\ Classe\ qui\ convertie\ un\ nombre\ en\ fahrenheit\ a\ un\ nombre\ arrondie\ en\ celcius\r\n\ @author\ (Anthony\ Trad)\r\n\ @version\ 1.0\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ le\ point\ d'entr\u00E9e\ de\ cette\ application,\ dont\ le\ commentaire\ est\ \u00E0\r\n\ compl\u00E9ter\ \:\r\n\ lire\ une\ valeur\ entiere\ par\ parametre\ et\ la\ convertir\r\n\ @param\ args\r\n\ Prendre\ une\ valeur\ en\ fahrenheit\ par\ args\r\n\ et\ afficher\ la\ conversion\ en\ celcius\r\n
+comment2.params=value
+comment2.target=boolean\ TryParseInt(java.lang.String)
+comment2.text=\r\n\ Une\ methode\ qui\ essaye\ de\ convertir\ un\ string\ en\ un\ entier\ sans\ se\r\n\ soucier\ des\ parse\ invalid\ et\ des\ input\ erronnes\r\n\ params\ value\ \:\ la\ valeur\ a\ convertir\r\n\ return\ boolean\ \:\ return\ si\ la\ conversion\ a\ etait\ faite\r\n
+comment3.params=f
+comment3.target=float\ fahrenheitEnCelsius(int)
+comment3.text=\r\n\ la\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\r\n\ \r\n\ @param\ f\r\n\ \ \ \ \ \ \ \ \ \ \ \ la\ valeur\ en\ degr\u00E9\ Fahrenheit\r\n\ @return\ la\ conversion\ en\ degr\u00E9\ Celsius\r\n
+comment4.params=valeurAarrondir\ pr\u00E9cision
+comment4.target=float\ ArrondirParCalcule(float,\ int)
+comment4.text=\r\n\ Une\ methode\ qui\ arrondie\ un\ flaot\ donne\ avec\ une\ precision\ donne\r\n\ params\ value\ \:\ la\ valeur\ a\ arrondir\ ,\ la\ precision\ donnes\ sous\ la\ forme\ de\ 10^(le\ nombre\ de\ chiffre\ apres\ la\ virgule)\r\n\ return\ float\ \:\ return\ la\ valeur\ arrondie\r\n
+numComments=5

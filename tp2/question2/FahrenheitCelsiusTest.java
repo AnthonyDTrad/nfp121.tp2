@@ -4,8 +4,8 @@ package question2;
 /**
  * Classe-test FahrenheitCelsiusTest.
  *
- * @author  (votre nom)
- * @version (un numéro de version ou une date)
+ * @author  (Anthony Trad)
+ * @version (1.0)
  *
  * Les classes-test sont documentées ici :
  * http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html
@@ -25,48 +25,65 @@ package question2;
  * qui réalise les engagements, et suivi d'un appel à tearDown(), qui les
  * détruit.
  */
-public class FahrenheitCelsiusTest extends junit.framework.TestCase
-{
-    // Définissez ici les variables d'instance nécessaires à vos engagements;
-    // Vous pouvez également les saisir automatiquement du présentoir
-    // à l'aide du menu contextuel "Présentoir --> Engagements".
-    // Notez cependant que ce dernier ne peut saisir les objets primitifs
-    // du présentoir (les objets sans constructeur, comme int, float, etc.).
+public class FahrenheitCelsiusTest extends junit.framework.TestCase {
+	// Définissez ici les variables d'instance nécessaires à vos engagements;
+	// Vous pouvez également les saisir automatiquement du présentoir
+	// à l'aide du menu contextuel "Présentoir --> Engagements".
+	// Notez cependant que ce dernier ne peut saisir les objets primitifs
+	// du présentoir (les objets sans constructeur, comme int, float, etc.).
 
-    /**
-     * Constructeur de la classe-test FahrenheitCelsiusTest
-     */
-    public FahrenheitCelsiusTest()
+	/**
+	 * Constructeur de la classe-test FahrenheitCelsiusTest
+	 */
+	public FahrenheitCelsiusTest() {
+	}
+
+	/**
+	 * Met en place les engagements.
+	 * 
+	 * Méthode appelée avant chaque appel de méthode de test.
+	 */
+	protected void setUp() // throws java.lang.Exception
+	{
+		// Initialisez ici vos engagements
+
+	}
+
+	/**
+	 * Supprime les engagements
+	 * 
+	 * Méthode appelée après chaque appel de méthode de test.
+	 */
+	protected void tearDown() // throws java.lang.Exception
+	{
+		// Libérez ici les ressources engagées par setUp()
+	}
+
+	/**
+	 * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test. Ces
+	 * méthodes doivent vérifier les résultats attendus à l'aide d'assertions
+	 * assertTrue(<boolean>). Par convention, leurs noms devraient débuter par
+	 * "test". Vous pouvez ébaucher le corps grâce au menu contextuel
+	 * "Enregistrer une méthode de test".
+	 */
+	public void test_fahrenheitEnCelsius() {
+		assertEquals("    0 °F -> -17.7 °C ? ", -17.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(0), 0.1);
+		assertEquals("  100 °F -> 37.7 °C ? ", 37.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(100), 0.1);
+		assertEquals(" 2000 °F -> 1093.3 °C ?", 1093.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(2000), 0.1);
+		assertEquals("   54 °F -> 12.2 °C ?", 12.2, question1.FahrenheitCelsius.fahrenheitEnCelsius(54), 0.1);
+	}
+	
+
+    public void testTesterInputNulle()
     {
+        question1.FahrenheitCelsius.main(new String[]{"","",""});
     }
 
-    /**
-     * Met en place les engagements.
-     *
-     * Méthode appelée avant chaque appel de méthode de test.
-     */
-    protected void setUp() // throws java.lang.Exception
+    public void testValeurNegativeEtZeroAbsolue()
     {
-        // Initialisez ici vos engagements
-
+       assertEquals("-500 °F -> -295.5 °C ? ", -295.5, question1.FahrenheitCelsius.fahrenheitEnCelsius(-500), 0.1);
+       assertEquals("-32 °F -> -35.5 °C ? ", -35.5, question1.FahrenheitCelsius.fahrenheitEnCelsius(-32), 0.1);
+       assertEquals("-2 °F -> -18.8 °C ? ", -18.8, question1.FahrenheitCelsius.fahrenheitEnCelsius(-2), 0.1);
+       question1.FahrenheitCelsius.main(new String[]{"-500","-32","-2" });
     }
-
-    /**
-     * Supprime les engagements
-     *
-     * Méthode appelée après chaque appel de méthode de test.
-     */
-    protected void tearDown() // throws java.lang.Exception
-    {
-        //Libérez ici les ressources engagées par setUp()
-    }
-
-    /**
-     * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test.
-     * Ces méthodes doivent vérifier les résultats attendus à l'aide d'assertions
-     * assertTrue(<boolean>).
-     * Par convention, leurs noms devraient débuter par "test".
-     * Vous pouvez ébaucher le corps grâce au menu contextuel "Enregistrer une méthode de test".
-     */
-
 }

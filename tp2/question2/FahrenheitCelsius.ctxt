@@ -1,10 +1,19 @@
 #BlueJ class context
 comment0.target=FahrenheitCelsius
-comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ FahrenheitCelsius\ ici.\r\n\ \r\n\ @author\ (votre\ nom)\ \r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ FahrenheitCelsius\ ici.\r\n\ \r\n\ @author\ (Anthony\ Trad)\ \r\n\ @version\ (1.0)\r\n\ NB\:\ jai\ fais\ quelque\ copy\ paste\ quon\ peux\ eviter\ si\ on\ changer\ un\ peu\r\n\ la\ structuration\ des\ classes\ qui\ nest\ pas\ demander\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment1.text=\ le\ point\ d'entr\u00E9e\ de\ cette\ application,\ \r\n\ dont\ le\ commentaire\ est\ \u00E0\ compl\u00E9ter\r\n\r\n\ \ @param\ args\ ...\r\n
-comment2.params=f
-comment2.target=float\ fahrenheitEnCelsius(int)
-comment2.text=\ \r\n\ la\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\ \r\n\ \ \ @param\ f\ la\ valeur\ en\ degr\u00E9\ Fahrenheit\r\n\ \ \ @return\ \ la\ conversion\ en\ degr\u00E9\ Celsius\r\n
-numComments=3
+comment2.params=args
+comment2.target=void\ Methode2(java.lang.String[])
+comment2.text=\r\nUne\ deuxieme\ methode\ que\ javais\ deja\ implementer\ des\ la\ 1er\ question..\r\nNB\:\ cette\ methode\ remplace\ le\ code\ definie\ en\ main(faire\ passer\r\nargs\ comme\ il\ est)\r\n@params\ args\ \:\ le\ meme\ que\ main\r\n
+comment3.params=value
+comment3.target=boolean\ TryParseInt(java.lang.String)
+comment3.text=\r\n\ Une\ methode\ qui\ essaye\ de\ convertir\ un\ string\ en\ un\ entier\ sans\ se\r\n\ soucier\ des\ parse\ invalid\ et\ des\ input\ erronnes\r\n\ params\ value\ \:\ la\ valeur\ a\ convertir\r\n\ return\ boolean\ \:\ return\ si\ la\ conversion\ a\ etait\ faite\r\n
+comment4.params=f
+comment4.target=float\ fahrenheitEnCelsius(int)
+comment4.text=\r\n\ la\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\r\n\ \r\n\ @param\ f\r\n\ \ \ \ \ \ \ \ \ \ \ \ la\ valeur\ en\ degr\u00E9\ Fahrenheit\r\n\ @return\ la\ conversion\ en\ degr\u00E9\ Celsius\r\n
+comment5.params=valeurAarrondir\ pr\u00E9cision
+comment5.target=float\ ArrondirParCalcule(float,\ int)
+comment5.text=\r\n\ Une\ methode\ qui\ arrondie\ un\ flaot\ donne\ avec\ une\ precision\ donne\r\n\ params\ value\ \:\ la\ valeur\ a\ arrondir\ ,\ la\ precision\ donnes\ sous\ la\ forme\ de\ 10^(le\ nombre\ de\ chiffre\ apres\ la\ virgule)\r\n\ return\ float\ \:\ return\ la\ valeur\ arrondie\r\n
+numComments=6

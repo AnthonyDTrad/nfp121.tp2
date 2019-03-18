@@ -1,8 +1,13 @@
 #BlueJ class context
-comment0.target=IHMFahrenheit()
-comment1.params=ae
-comment1.target=void\ actionPerformed(ActionEvent)
-comment1.text=\nm\u00E9thode\ d\u00E9clench\u00E9e\ lorsque\ le\ bouton\ de\ conversion\ est\ appuy\u00E9.\ \nremarquer\ que\ le\ champs\ de\ droite\ (les\ degr\u00E9s\ Celsius)\ n'est\ pas\ \u00E9ditable.\n@param\ ae\ l'\u00E9v\u00E9nement\ transmis\n\n
-comment2.params=args
-comment2.target=void\ main(String[])
-numComments=3
+comment0.target=IHMFahrenheit
+comment1.params=
+comment1.target=IHMFahrenheit()
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=\ \r\n\ m\u00E9thode\ d\u00E9clench\u00E9e\ lorsque\ le\ bouton\ de\ conversion\ est\ appuy\u00E9.\ \r\n\ remarquer\ que\ le\ champs\ de\ droite\ (les\ degr\u00E9s\ Celsius)\ n'est\ pas\ \u00E9ditable.\r\n\ @param\ ae\ l'\u00E9v\u00E9nement\ transmis\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=value
+comment4.target=boolean\ TryParseInt(java.lang.String)
+comment4.text=\r\n\ Une\ methode\ qui\ essaye\ de\ convertir\ un\ string\ en\ un\ entier\ sans\ se\r\n\ soucier\ des\ parse\ invalid\ et\ des\ input\ erronnes\r\n\ params\ value\ \:\ la\ valeur\ a\ convertir\r\n\ return\ boolean\ \:\ return\ si\ la\ conversion\ a\ etait\ faite\r\n
+numComments=5
